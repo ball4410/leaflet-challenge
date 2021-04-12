@@ -52,4 +52,10 @@ var darkmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z
       Earthquakes: earthquakes
   };
 
+  //Create map
+  var myMap = L.map("map", {
+      center: [37.09, -95.71],
+      zoom: 5,
+      layers: [streepmap, earthquakes]
+  });
 }
