@@ -41,4 +41,10 @@ var darkmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z
     accessToken: API_KEY
   });
 
+  //Define baseMaps layer
+  var baseMaps = {
+      "Street Map": streetmap,
+      "Dark Map": darkmap
+  };
+
 }
