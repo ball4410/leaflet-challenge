@@ -58,4 +58,9 @@ var darkmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z
       zoom: 5,
       layers: [streepmap, earthquakes]
   });
+
+  //Create control layer
+  L.control.layers(baseMaps, overlayMaps, {
+      collapsed: false
+  }).addTo(myMap);
 }
