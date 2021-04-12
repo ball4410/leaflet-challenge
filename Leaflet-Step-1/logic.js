@@ -47,4 +47,9 @@ var darkmap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z
       "Dark Map": darkmap
   };
 
+  //Create overlay layer
+  var overlayMaps = {
+      Earthquakes: earthquakes
+  };
+
 }
