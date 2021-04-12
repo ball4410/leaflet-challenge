@@ -8,8 +8,9 @@ d3.json(queryUrl).then(function(data) {
 });
 
 function createFeatures(earthquakeData){
+    //Gives each feature a descriptive popup
     function onEachFeature(feature, layer){
         layer.bindPopup("<h4>" + feature.properties.place +
-            "</h4><hr><p>" + new Date(feature.properties.time) + "</p>"):
+            "</h4><hr><p>" + new Date(feature.properties.time) + "</p>");
     }
 }
